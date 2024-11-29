@@ -118,8 +118,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("🍂 About 🍂", callback_data = "about"),
+                    InlineKeyboardButton("🚫 Close 🚫", callback_data = "close")
                 ]
             ]
         )
@@ -176,7 +176,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "🪁Join Channel🪁",
                 url = ButtonUrl)
         ]
     ]
@@ -185,7 +185,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = '🔁Re-Try🔁',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
